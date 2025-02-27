@@ -11,4 +11,13 @@ public class Two implements Runnable {
         }
     }
 
+    public static void main(String[] args) {
+
+        Two two = new Two();
+        Thread t1 = new Thread(two);
+
+        t1.start();
+
+    }
+
 }
